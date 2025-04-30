@@ -1,0 +1,61 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e8cc8b;
+}
+
+.toggle-scene {
+  overflow: visible !important;
+  height: 80vmin;
+  position: absolute;
+}
+
+#bulb.on {
+  fill: #dfffa4;
+  stroke: #111;
+  stroke-width: 2;
+  filter: drop-shadow(0 0 10px #dfffa4);
+}
+
+#bulb.off {
+  fill: #444;
+  stroke: #111;
+  stroke-width: 2;
+  filter: none;
+}
+
+.bulb-base {
+  fill: #aaa;
+  stroke: #444;
+  stroke-width: 1;
+}
+
+.wire {
+  stroke: white;
+  stroke-width: 2;
+}
+
+.string {
+  stroke: #111;
+  stroke-width: 2;
+}
+
+.pull-switch {
+  fill: #ccc;
+  stroke: #222;
+  stroke-width: 1;
+  cursor: pointer;
+}
+
+.pull-switch.pulling {
+  animation: pull 0.3s ease;
+}
+
+@keyframes pull {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+  100% { transform: translateY(0); }
+}

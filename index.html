@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exact Lightbulb Toggle</title>
+  <link rel="stylesheet" href="the_coding_wizard.css" />
+</head>
+<body>
+  <div class="toggle-scene">
+    <svg viewBox="0 0 120 300" xmlns="http://www.w3.org/2000/svg">
+      <!-- Bulb Outline -->
+      <circle id="bulb" cx="60" cy="60" r="35" class="on" />
+      <rect x="45" y="90" width="30" height="30" class="bulb-base" />
+      <!-- Wires inside bulb -->
+      <line x1="50" y1="75" x2="55" y2="90" class="wire" />
+      <line x1="70" y1="75" x2="65" y2="90" class="wire" />
+      <!-- String and pull switch -->
+      <line x1="60" y1="120" x2="60" y2="230" class="string" />
+      <circle id="switch" cx="60" cy="235" r="6" class="pull-switch" />
+    </svg>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
